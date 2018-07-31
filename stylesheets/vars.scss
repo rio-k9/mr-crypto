@@ -1,0 +1,35 @@
+$white-color: #ffffff;
+$brand-color: #80A8E1;
+$highlight-color: #51d670;
+$error-color: #ba302c;
+$text-color:#303030;
+
+$z-index-1:100;
+$z-index-2:200;
+$z-index-3:300;
+$z-index-4:400;
+$z-index-10:1000;
+$z-index-gdpr: 1100;
+$z-index-user:1200;
+
+$header-size: 32px;
+$subhead-size: 24px;
+$font-size: 18px;
+
+$height-icon: 20px;
+$width-line: 40px;
+$height-line: 3px;
+
+$transition-time: 0.4s;
+$rotation: 45deg;
+$translateY: ($height-icon / 2);
+$translateX: 0;
+*{
+
+  box-sizing:border-box;
+}
+
+html, body{
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing:  antialiased;
+}

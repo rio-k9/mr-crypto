@@ -1,0 +1,224 @@
+@import "vars";
+
+@media screen and (min-width:1180px){
+  .adapt-width{
+    margin:auto;
+    width:996px;
+  }
+}
+
+@media screen and (max-width:1355px){
+  .nav-bar--mobile-filter{
+    background:black;
+    opacity:.5;
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    display:none;
+    z-index:$z-index-gdpr;
+    &.active{
+      display:block;
+    }
+  }
+  nav.nav-bar{
+    transition:margin-top .2s ease-in;
+    &.active{
+      margin-top:-100px;
+    }
+    .container{
+      &:nth-child(2){
+        display:none;
+      }
+      &:nth-child(3){
+        display:none;
+      }
+    }
+    .container--mobile{
+      position:absolute;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      height:100%;
+      right:12px;
+      width:60px;
+    }
+  }
+
+  nav.nav-bar--mobile:not(.nav-bar){
+    display:flex;
+    position:fixed;
+    right:-320px;
+    top:0;
+    bottom:0;
+    width:300px;
+    font-weight:500;
+    background:$white-color;
+    z-index: $z-index-user;
+    transition: right .5s ease-in-out;
+    background:$brand-color;
+    color:$white-color;
+    &.active{
+      right:0;
+    }
+    .nav-bar--close{
+      position:absolute;
+      top:15px;
+      right:15px;
+      border-radius:50%;
+      background:$white-color;
+      opacity:.5;
+      font-size:22px;
+      cursor:pointer;
+      color:$brand-color;
+      width:30px;
+      height:30px;
+      align-items:center;
+      border:none;
+      transition:opacity .2s ease-in-out;
+      padding-top:2px;
+      &:hover{
+        opacity:1;
+      }
+    }
+    ul{
+      position:absolute;
+      top:26px;
+      bottom:0;
+      left:0;
+      right:10%;
+      li{
+        font-size:16px;
+        text-align:left;
+        text-transform:uppercase;
+        width:100%;
+        padding: 6px 0 6px 36px;
+        transition: opacity .2s ease-in-out;
+        a{
+          cursor:pointer;
+        }
+        &:first-child{
+          padding-left:16px;
+          height:90px;
+          filter: brightness(0) invert(1);
+          img{
+            height:100%;
+            width:auto;
+            cursor:pointer;
+          }
+        }
+        &:nth-child(2){
+          margin-top:20px;
+        }
+        &.is-button{
+          padding-top:42px;
+          padding-bottom:42px;
+          .btn-form{
+            padding:22px 32px;
+          }
+        }
+        &:nth-child(7){
+          font-size:20px;
+          margin-top:32px;
+          text-transform:capitalize;
+        }
+        &:nth-child(8){
+          margin-top:8px;
+          font-size:20px;
+          text-transform:capitalize;
+        }
+        &:last-child{
+
+          margin-top:32px;
+        }
+        &:hover:not(.is-button){
+          opacity:.75;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:671px){ //mobile port
+  .content--padded{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  section.section-header .container .content {
+    flex: 1;
+    &:first-child {
+      font-size: $subhead-size;
+      flex: 1;
+      max-height: 98px;
+    }
+    &:nth-of-type(2){
+      display:none;
+    }
+    &:nth-of-type(3){
+      font-size:$font-size;
+      flex:.4;
+    }
+    &:last-child{
+      padding: 46px 32px;
+      flex-flow:column nowrap;
+      .content-item{
+        flex:1;
+        padding:14px 0;
+
+        .paragraph{
+          width:100%;
+          &:first-child{
+              flex-basis:70%;
+          }
+          &:last-child{
+            flex-basis:15%;
+          }
+        }
+      }
+    }
+  }
+
+  section.section-explicacion{
+    height:550px;
+    .container{
+      .content{
+        flex:1;
+        &:first-child {
+          font-size: $subhead-size;
+          max-height: none;
+        }
+        &:nth-of-type(2){
+          display:none;
+        }
+        &:nth-of-type(3){
+          font-size:$font-size;
+        }
+      }
+    }
+  }
+  section.section-temario{
+    height:3600px;
+    .container{
+      .content{
+        &:first-child{
+          font-size:$font-size;
+        }
+
+        &:last-child{
+          max-height:138px;
+          padding: 46px 32px;
+        }
+      }
+    }
+  }
+
+  section.section-temario .container .content:nth-child(2){
+    .slide{
+      flex-flow:column nowrap;
+      .panel{
+        padding:24px 0;
+      }
+    }
+  }
+}
