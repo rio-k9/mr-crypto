@@ -51,7 +51,7 @@ html, body {
   left: 0;
   right: 0;
   background: #ffffff;
-  height: 45px;
+  padding: 8px;
   display: flex;
   color: #737373;
   font-size: 12px;
@@ -372,7 +372,7 @@ nav.nav-bar .nav-list {
     color: #80A8E1;
     transition: all .2s ease-in-out; }
 
-section {
+section:not(section.section-purchase) {
   display: flex;
   width: 100%;
   padding-top: 18px;
@@ -643,21 +643,6 @@ section.section-incluye .container .content:last-child .slide {
     section.section-incluye .container .content:last-child .slide .panel .panel-bot {
       flex-basis: 25%; }
 
-section.section-curso {
-  text-align: center; }
-  section.section-curso .container {
-    height: 80%;
-    color: #ffffff;
-    font-size: 18px;
-    line-height: 24px; }
-    section.section-curso .container span {
-      display: block;
-      font-size: 34px; }
-      section.section-curso .container span:nth-of-type(2) {
-        color: #51d670; }
-      section.section-curso .container span:last-of-type {
-        color: #ba302c; }
-
 section.section-comienza .container {
   flex: .85;
   border-top: solid rgba(0, 0, 0, 0.1) 1px; }
@@ -704,6 +689,21 @@ section.section-comienza .container {
       flex-basis: 15%; }
     section.section-comienza .container:last-child .content:last-child {
       flex-basis: 65%; }
+
+section.section-curso {
+  text-align: center; }
+  section.section-curso .container {
+    height: 80%;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 24px; }
+    section.section-curso .container span {
+      display: block;
+      font-size: 34px; }
+      section.section-curso .container span:nth-of-type(2) {
+        color: #51d670; }
+      section.section-curso .container span:last-of-type {
+        color: #ba302c; }
 
 footer.section-footer .container {
   flex: 1;
@@ -760,4 +760,44 @@ footer.section-footer .container {
         padding: 32px 0;
         color: #303030; }
 
-/*# sourceMappingURL=home.css.map */
+/*
+------------
+PRODUCTS
+-------------
+ */
+.btn-product {
+  background: #80A8E1;
+  background: #80A8E1;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #80A8E1 0%, #345C95 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #80A8E1 0%, #345C95 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #80A8E1 0%, #345C95 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a92828', endColorstr='#ba302c',GradientType=0 );
+  /* IE6-9 */ }
+
+section.section-purchase {
+  text-align: center; }
+  section.section-purchase span:not(.btn-form) {
+    padding: 8px 0; }
+  section.section-purchase .container {
+    height: 100%; }
+    section.section-purchase .container .content {
+      padding: 12px 0; }
+      section.section-purchase .container .content:first-child {
+        flex-basis: 15%; }
+        section.section-purchase .container .content:first-child img {
+          width: auto;
+          height: 90px; }
+      section.section-purchase .container .content:nth-child(2) span {
+        padding: 8px 0; }
+        section.section-purchase .container .content:nth-child(2) span:first-child {
+          font-size: 32px;
+          color: #ec1561; }
+        section.section-purchase .container .content:nth-child(2) span:last-child {
+          font-size: 24px;
+          font-style: italic; }
+
+/*# sourceMappingURL=grid.css.map */

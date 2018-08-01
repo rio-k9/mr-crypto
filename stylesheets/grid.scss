@@ -53,7 +53,7 @@ html, body{
   left:0;
   right:0;
   background:$white-color;
-  height:45px;
+  padding:8px;
   display:flex;
   color:#737373;
   font-size:12px;
@@ -449,7 +449,7 @@ nav.nav-bar .nav-list{
   }
 }
 
-section{
+section:not(section.section-purchase){
   display:flex;
   width:100%;
   padding-top:18px;
@@ -825,28 +825,6 @@ section.section-incluye .container .content:last-child{
   }
 }
 
-section.section-curso{
-  text-align:center;
-  .container{
-    height:80%;
-    color:$white-color;
-    font-size:18px;
-    line-height:24px;
-    span{
-      display:block;
-      font-size: 34px;
-      &:nth-of-type(2){
-        color: $highlight-color;
-      }
-      &:last-of-type{
-
-        color: $error-color;
-      }
-    }
-  }
-}
-
-
 section.section-comienza .container{
 flex:.85;
   border-top:solid rgba(0, 0, 0, .1) 1px;
@@ -913,6 +891,26 @@ flex:.85;
   }
 }
 
+section.section-curso{
+  text-align:center;
+  .container{
+    height:80%;
+    color:$white-color;
+    font-size:18px;
+    line-height:24px;
+    span{
+      display:block;
+      font-size: 34px;
+      &:nth-of-type(2){
+        color: $highlight-color;
+      }
+      &:last-of-type{
+
+        color: $error-color;
+      }
+    }
+  }
+}
 
 footer.section-footer{
   .container{
@@ -993,4 +991,64 @@ footer.section-footer{
 
     }
   }
+}
+
+/*
+------------
+PRODUCTS
+-------------
+ */
+  .btn-product{
+    background: $brand-color;
+    background: $brand-color; /* Old browsers */
+    background: -moz-linear-gradient(top, $brand-color 0%, #345C95 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $brand-color 0%,#345C95 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $brand-color 0%,#345C95 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a92828', endColorstr='#ba302c',GradientType=0 ); /* IE6-9 */
+  }
+
+
+section.section-purchase{
+  text-align:center;
+
+  span:not(.btn-form) {
+    padding: 8px 0;
+  }
+
+  .container{
+    height:100%;
+
+    .content{
+      padding:12px 0;
+      &:first-child{
+        flex-basis:15%;
+        img{
+          width:auto;
+
+          height:90px;
+        }
+      }
+      &:nth-child(2){
+        span{
+          padding:8px 0;
+          &:first-child{
+            font-size:$header-size;
+            color:$purchase-color;
+
+          }
+          &:last-child{
+            font-size: $subhead-size;
+            font-style:italic;
+          }
+        }
+      }
+      &:nth-child(3){
+
+      }
+      &:last-child{
+
+      }
+    }
+  }
+
 }

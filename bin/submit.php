@@ -19,7 +19,7 @@
             $headers = "MIME-Version: 1.0" ."\r\n";
             $headers .="Content-Type:text/html;charset=UTF-8" ."\r\n";
 
-            $headers .= "From: WebSoar <noreply@websoar.co.uk>" ."\r\n";
+            $headers .= "From: Mr. Crypto Academy <noreply@mrcryptoacademy.co.uk>" ."\r\n";
             if(mail($toEmail, $subject, $body, $headers)){
                 header("Location: ../product.html");
                 die();

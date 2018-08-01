@@ -116,6 +116,9 @@ html, body {
         nav.nav-bar--mobile:not(.nav-bar) ul li:hover:not(.is-button) {
           opacity: .75; } }
 @media screen and (max-width: 671px) {
+  section {
+    padding: 0 12px; }
+
   .content--padded {
     padding-left: 10px;
     padding-right: 10px; }
@@ -167,6 +170,48 @@ html, body {
   section.section-temario .container .content:nth-child(2) .slide {
     flex-flow: column nowrap; }
     section.section-temario .container .content:nth-child(2) .slide .panel {
-      padding: 24px 0; } }
+      padding: 24px 0; }
+
+  section.section-incluye {
+    height: 2360px; }
+
+  section.section-incluye .container .content:first-child div {
+    flex: 1; }
+    section.section-incluye .container .content:first-child div span:first-child.header {
+      font-size: 24px; }
+    section.section-incluye .container .content:first-child div span:last-child {
+      font-size: 18px; }
+
+  section.section-incluye .container .content:last-child .slide {
+    flex-flow: column nowrap; }
+
+  section.section-comienza .container:last-child {
+    text-align: center;
+    padding: 32px 0; }
+    section.section-comienza .container:last-child .content:first-child {
+      font-size: 24px; }
+    section.section-comienza .container:last-child .content:nth-child(2) {
+      font-size: 18px; }
+
+  section.section-curso {
+    height: 686px; }
+    section.section-curso .container {
+      font-size: 18px; }
+      section.section-curso .container span {
+        font-size: 32px; }
+
+  footer.section-footer {
+    text-align: center; }
+    footer.section-footer .container:first-child {
+      font-size: 24px; }
+    footer.section-footer .container .footer__list .footer__list-item--header {
+      font-size: 24px; }
+    footer.section-footer .container:last-child .footer__list-item:first-child.footer__list-item--header {
+      font-size: 24px; }
+    footer.section-footer .container:last-child .footer__list-item:nth-child(2) span {
+      transform: scale(1.2); }
+
+  .cookies-bar .cookies-bar__content:first-child {
+    padding-left: 0; } }
 
 /*# sourceMappingURL=media.css.map */
