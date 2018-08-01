@@ -998,14 +998,14 @@ footer.section-footer{
 PRODUCTS
 -------------
  */
-  .btn-product{
-    background: $brand-color;
-    background: $brand-color; /* Old browsers */
-    background: -moz-linear-gradient(top, $brand-color 0%, #345C95 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, $brand-color 0%,#345C95 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, $brand-color 0%,#345C95 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a92828', endColorstr='#ba302c',GradientType=0 ); /* IE6-9 */
-  }
+.btn-product{
+  background: $brand-color;
+  background: $brand-color; /* Old browsers */
+  background: -moz-linear-gradient(top, $brand-color 0%, #345C95 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, $brand-color 0%,#345C95 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, $brand-color 0%,#345C95 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a92828', endColorstr='#ba302c',GradientType=0 ); /* IE6-9 */
+}
 
 
 section.section-purchase{
