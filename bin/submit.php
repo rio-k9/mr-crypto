@@ -6,7 +6,7 @@
         $name = htmlspecialchars($_POST['name']);
         $email = htmlspecialchars($_POST['email']);
         if($response["success"] === true){
-             $toEmail = 'info@mrcrypto.com';
+             $toEmail = 'info@mrcryptoacademy.com';
             $subject = 'New Lead - ' .$name;
             $body = '
              <h3> You have a Mr Crypto Lead -' .$name .'</h3>
