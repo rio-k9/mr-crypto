@@ -7,7 +7,7 @@
   }
 }
 
-@media screen and (max-width:1355px){
+@media screen and (max-width:1220px){
   .nav-bar--mobile-filter{
     background:black;
     opacity:.5;
@@ -57,7 +57,7 @@
     background:$white-color;
     z-index: $z-index-user;
     transition: right .5s ease-in-out;
-    background:$brand-color;
+    background:#424242;
     color:$white-color;
     &.active{
       right:0;
@@ -67,17 +67,18 @@
       top:15px;
       right:15px;
       border-radius:50%;
-      background:$white-color;
+      background:$brand-color;
       opacity:.5;
       font-size:22px;
       cursor:pointer;
-      color:$brand-color;
+      color:#424242;
       width:30px;
       height:30px;
       align-items:center;
       border:none;
       transition:opacity .2s ease-in-out;
       padding-top:2px;
+      z-index: $z-index-user;
       &:hover{
         opacity:1;
       }
@@ -101,7 +102,6 @@
         &:first-child{
           padding-left:16px;
           height:90px;
-          filter: brightness(0) invert(1);
           img{
             height:100%;
             width:auto;
@@ -115,18 +115,9 @@
           padding-top:42px;
           padding-bottom:42px;
           .btn-form{
+            background:$brand-color;
             padding:22px 32px;
           }
-        }
-        &:nth-child(7){
-          font-size:20px;
-          margin-top:32px;
-          text-transform:capitalize;
-        }
-        &:nth-child(8){
-          margin-top:8px;
-          font-size:20px;
-          text-transform:capitalize;
         }
         &:last-child{
 
@@ -143,6 +134,9 @@
 @media screen and (max-width:671px){ //mobile port
   section{
     padding: 0 12px;
+  }
+  .js-userbar{
+    display:none;
   }
   .content--padded{
     padding-left: 10px;
@@ -200,6 +194,7 @@
       }
     }
   }
+
   section.section-temario{
     height:3600px;
     .container{
@@ -299,6 +294,12 @@
         }
       }
     }
+  }
+
+  img[alt="Accepted Payments"]{
+    width:98%;
+    margin:auto;
+    height:auto;
   }
   .cookies-bar{
     .cookies-bar__content{
