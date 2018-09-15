@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+    $("a.btn-form").click(function(e){
+    document.querySelector('#comienzaForm').submit();
+
+});
+
   $('.js-userbar .user-bar__content:last-child span').html('<span>' +callCustomer() +'</span>' + callMessage());
   setInterval(function(){
     $('.js-userbar').toggleClass('visible');

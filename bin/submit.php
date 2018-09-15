@@ -23,5 +23,5 @@ if(filter_has_var(INPUT_POST, 'submit')){
         mail($to, $subject, $body, $headers);
     }
 }
+echo "<script>window.close();</script>";
 ?>
-
