@@ -464,20 +464,23 @@ section.section-explicacion .container {
     section.section-explicacion .container .content:last-child {
       padding: 0 32px 46px 32px; }
 
-section.section-temario .container {
-  height: 100%; }
-  section.section-temario .container .content {
-    flex: 1; }
-    section.section-temario .container .content:first-child {
-      font-size: 24px;
-      flex: 1;
-      max-height: 188px;
-      text-align: center; }
-    section.section-temario .container .content:nth-of-type(2) {
+section.section-temario {
+  height: 1200px; }
+  section.section-temario .container {
+    height: 100%; }
+    section.section-temario .container .content {
       flex: 1; }
-    section.section-temario .container .content:last-child {
-      max-height: 138px;
-      padding: 46px 32px; }
+      section.section-temario .container .content:first-child {
+        font-size: 24px;
+        flex: 1;
+        max-height: 188px;
+        text-align: center; }
+      section.section-temario .container .content:nth-of-type(2) {
+        flex: 1; }
+      section.section-temario .container .content:last-child {
+        max-height: 138px;
+        padding: 46px 32px;
+        padding-top: 0; }
 
 section.section-temario .container .content:first-child div {
   flex: 1; }

@@ -584,6 +584,7 @@ section.section-explicacion{
 }
 
 section.section-temario{
+  height:1200px;
   .container{
     height:100%;
     .content{
@@ -603,6 +604,7 @@ section.section-temario{
       &:last-child{
         max-height:138px;
         padding: 46px 32px;
+        padding-top:0;
       }
     }
   }
