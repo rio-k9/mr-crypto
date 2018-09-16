@@ -134,17 +134,19 @@
 @media screen and (max-width:671px){ //mobile port
   section.section-incluye .container .content:last-child{
     .slide{
-
+      .panel-top{
+        min-height:150px;
+      }
       &:first-child {
         .panel {
           &:first-child {
             .panel-top{
-              background-size:25%;
+              background-size:150px;
             }
           }
           &:last-child {
             .panel-top{
-              background-size:25%;
+              background-size:150px;
             }
           }
         }
@@ -153,12 +155,12 @@
         .panel{
           &:first-child{
             .panel-top{
-              background-size:25%;
+              background-size:150px;
             }
           }
           &:last-child{
             .panel-top{
-              background-size:25%;
+              background-size:150px;
             }
           }
         }
@@ -167,12 +169,12 @@
         .panel{
           &:first-child{
             .panel-top{
-              background-size:25%;
+              background-size:150px;
             }
           }
           &:last-child{
             .panel-top{
-              background-size:25%;
+              background-size:150px;
             }
           }
         }

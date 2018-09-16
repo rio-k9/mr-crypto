@@ -788,6 +788,7 @@ section.section-incluye{
   height:1506px;
   color:$text-color;
   padding-top:6px;
+  margin-bottom:0;
   .container{
     height:100%;
     .content{
@@ -898,8 +899,11 @@ section.section-incluye .container .content:last-child{
   }
 }
 
+section.section-comienza{
+  margin-top:0;
+}
 section.section-comienza .container{
-flex:.85;
+  flex:.85;
   border-top:solid rgba(0, 0, 0, .1) 1px;
   margin-bottom:-36px;
   form{
@@ -992,6 +996,7 @@ section.section-curso{
 }
 
 footer.section-footer{
+  padding:0 32px;
   .container{
     flex:1;
     margin-bottom:24px;
