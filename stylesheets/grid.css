@@ -719,6 +719,7 @@ section.section-comienza .container {
         padding: 14px;
         font-family: inherit;
         color: #303030;
+        font-size: 16px;
         flex-wrap: nowrap;
         border: solid #80A8E1 1px; }
       section.section-comienza .container form .formgroup button[type="submit"] {
