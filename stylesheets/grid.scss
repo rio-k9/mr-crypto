@@ -337,7 +337,8 @@ nav.nav-bar .container{
 
   &.container .wrapper img{
     display:block;
-    width:100%;
+    width:90%;
+    margin-left:5%;
     height:auto;
     cursor:pointer;
   }
@@ -620,7 +621,6 @@ section.section-temario .container .content:first-child div{
   }
 
 }
-
 span[name="submit"]{
   padding:0 36px;
 }
@@ -775,7 +775,7 @@ section.section-temario{
           height:40px;
           width:40px;
           opacity:1;
-
+          filter: brightness(0) invert(1);
           background: url("../images/icon.png") center center no-repeat;
           background-size:cover;
         }
@@ -857,7 +857,7 @@ section.section-incluye .container .content:last-child{
         }
         &:last-child {
           .panel-top{
-            background: url("../images/assets/telegram1.png") center center no-repeat;
+            background: url("../images/assets/Asset 2.svg") center center no-repeat;
               background-size:50%;;
           }
         }
@@ -867,13 +867,13 @@ section.section-incluye .container .content:last-child{
       .panel{
         &:first-child{
           .panel-top{
-            background: url("../images/assets/telegram3.png") center center no-repeat;
+            background: url("../images/assets/Asset 4.svg") center center no-repeat;
               background-size:50%;;
           }
         }
         &:last-child{
           .panel-top{
-            background: url("../images/assets/telegram5.png") center center no-repeat;
+            background: url("../images/assets/Asset 3.svg") center center no-repeat;
               background-size:50%;;
           }
         }
@@ -1106,16 +1106,15 @@ section.section-purchase{
         img{
           width:auto;
           margin-right:16px;
-          height:90px;
+          height:75px;
         }
       }
       &:nth-child(2){
         margin-top:12px;
         span{
+          font-size:$header-size;
           padding:8px 0;
           &:first-child{
-            font-size:$header-size;
-            color:$purchase-color;
 
           }
           &:last-child{
@@ -1175,12 +1174,7 @@ section.section-buynow{
     &:nth-child(2){
       margin-top:12px;
       span, a{
-        padding:8px 0;
-        &:first-child{
-          font-size:$header-size;
-          color:$purchase-color;
-
-        }
+        padding:16px 16px;
         &:last-child{
           font-size: $font-size;
           text-align:center;
@@ -1196,5 +1190,7 @@ section.section-buynow{
         width:auto;
       }
     }
+  }
+  a{
   }
 }

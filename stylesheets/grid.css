@@ -294,7 +294,8 @@ span.highlight {
 
 nav.nav-bar .container.container .wrapper img {
   display: block;
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
   height: auto;
   cursor: pointer; }
 nav.nav-bar .container.container:first-child {
@@ -618,6 +619,7 @@ section.section-temario {
           height: 40px;
           width: 40px;
           opacity: 1;
+          filter: brightness(0) invert(1);
           background: url("../images/icon.png") center center no-repeat;
           background-size: cover; }
 
@@ -668,13 +670,13 @@ section.section-incluye .container .content:last-child .slide {
     background: url("../images/assets/escuela.png") center center no-repeat;
     background-size: 50%; }
   section.section-incluye .container .content:last-child .slide:first-child .panel:last-child .panel-top {
-    background: url("../images/assets/telegram1.png") center center no-repeat;
+    background: url("../images/assets/Asset 2.svg") center center no-repeat;
     background-size: 50%; }
   section.section-incluye .container .content:last-child .slide:nth-child(2) .panel:first-child .panel-top {
-    background: url("../images/assets/telegram3.png") center center no-repeat;
+    background: url("../images/assets/Asset 4.svg") center center no-repeat;
     background-size: 50%; }
   section.section-incluye .container .content:last-child .slide:nth-child(2) .panel:last-child .panel-top {
-    background: url("../images/assets/telegram5.png") center center no-repeat;
+    background: url("../images/assets/Asset 3.svg") center center no-repeat;
     background-size: 50%; }
   section.section-incluye .container .content:last-child .slide:last-child .panel:first-child .panel-top {
     background: url("../images/assets/bitcoin.png") center center no-repeat;
@@ -838,14 +840,12 @@ section.section-purchase {
         section.section-purchase .container .content:first-child img {
           width: auto;
           margin-right: 16px;
-          height: 90px; }
+          height: 75px; }
       section.section-purchase .container .content:nth-child(2) {
         margin-top: 12px; }
         section.section-purchase .container .content:nth-child(2) span {
+          font-size: 32px;
           padding: 8px 0; }
-          section.section-purchase .container .content:nth-child(2) span:first-child {
-            font-size: 32px;
-            color: #ec1561; }
           section.section-purchase .container .content:nth-child(2) span:last-child {
             font-size: 24px;
             font-style: italic; }
@@ -878,10 +878,7 @@ section.section-buynow {
     section.section-buynow .content:nth-child(2) {
       margin-top: 12px; }
       section.section-buynow .content:nth-child(2) span, section.section-buynow .content:nth-child(2) a {
-        padding: 8px 0; }
-        section.section-buynow .content:nth-child(2) span:first-child, section.section-buynow .content:nth-child(2) a:first-child {
-          font-size: 32px;
-          color: #ec1561; }
+        padding: 16px 16px; }
         section.section-buynow .content:nth-child(2) span:last-child, section.section-buynow .content:nth-child(2) a:last-child {
           font-size: 18px;
           text-align: center; }

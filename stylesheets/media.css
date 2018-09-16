@@ -109,6 +109,19 @@ html, body {
         nav.nav-bar--mobile:not(.nav-bar) ul li:hover:not(.is-button) {
           opacity: .75; } }
 @media screen and (max-width: 671px) {
+  section.section-incluye .container .content:last-child .slide:first-child .panel:first-child .panel-top {
+    background-size: 25%; }
+  section.section-incluye .container .content:last-child .slide:first-child .panel:last-child .panel-top {
+    background-size: 25%; }
+  section.section-incluye .container .content:last-child .slide:nth-child(2) .panel:first-child .panel-top {
+    background-size: 25%; }
+  section.section-incluye .container .content:last-child .slide:nth-child(2) .panel:last-child .panel-top {
+    background-size: 25%; }
+  section.section-incluye .container .content:last-child .slide:last-child .panel:first-child .panel-top {
+    background-size: 25%; }
+  section.section-incluye .container .content:last-child .slide:last-child .panel:last-child .panel-top {
+    background-size: 25%; }
+
   section {
     padding: 0 12px; }
 
@@ -118,6 +131,9 @@ html, body {
   .content--padded {
     padding-left: 10px;
     padding-right: 10px; }
+
+  .panel-top {
+    background-size: 10%; }
 
   section.section-header .container .content {
     flex: 1; }

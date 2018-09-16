@@ -6,7 +6,7 @@ if(filter_has_var(INPUT_POST, 'submit')){
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
     if(!empty($email) && !empty($name)){
-        $to = 'rkarim@websoar.co.uk';
+        $to = 'mrcryptoacademy@outlook.es';
         $subject = 'New Lead - ' .$name;
         $body = '
          <h3> You have a Mr Crypto Lead - ' .$name .'</h3>
@@ -23,5 +23,5 @@ if(filter_has_var(INPUT_POST, 'submit')){
         mail($to, $subject, $body, $headers);
     }
 }
-echo "<script>window.close();</script>";
+echo "<script>window.location.href = 'http://www.mrcryptoacademy.com/product.html'</script>";
 ?>
