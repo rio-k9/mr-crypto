@@ -87,7 +87,7 @@ html, body {
     background: #121212;
     border-radius: 8px 0 0 8px; }
     .user-bar .user-bar__content:first-child img {
-      width: 65%;
+      width: 50%;
       height: auto;
       display: block; }
   .user-bar .user-bar__content:last-child {
@@ -509,6 +509,8 @@ section.section-temario .container .content:nth-child(2) .slide {
 
 section.section-temario {
   color: #303030; }
+  section.section-temario .panel-top {
+    min-height: 120px; }
   section.section-temario .panel-top__illustration {
     display: block;
     margin: auto;
@@ -605,7 +607,8 @@ section.section-temario {
       width: 100%;
       position: relative;
       z-index: 200;
-      background-color: transparent; }
+      background-color: transparent;
+      min-height: 100px; }
       section.section-temario .panel-top__illustration .panel-top__illustration--cover span {
         position: absolute;
         z-index: 300; }
@@ -627,7 +630,7 @@ section.section-temario {
           background-size: cover; }
 
 section.section-incluye {
-  height: 1506px;
+  height: 1280px;
   color: #303030;
   padding-top: 6px;
   margin-bottom: 0; }
@@ -690,7 +693,8 @@ section.section-incluye .container .content:last-child .slide {
     background-size: 62%; }
 
 section.section-comienza {
-  margin-top: 0; }
+  margin-top: 0;
+  height: 900px; }
 
 section.section-comienza .container {
   flex: .85;
@@ -714,7 +718,7 @@ section.section-comienza .container {
         flex: .4; }
       section.section-comienza .container form .formgroup input {
         border-radius: 6px;
-        height: 60%;
+        height: 50px;
         width: 100%;
         padding: 14px;
         font-family: inherit;

@@ -97,7 +97,7 @@ html, body{
       background:#121212;
       border-radius:8px 0 0 8px;
       img{
-        width:65%;
+        width:50%;
         height:auto;
         display:block;
       }
@@ -652,6 +652,9 @@ section.section-temario .container .content:nth-child(2){
 }
 section.section-temario{
   color:$text-color;
+  .panel-top{
+    min-height:120px;
+  }
   .panel-top__illustration{
     display:block;
     margin:auto;
@@ -760,6 +763,7 @@ section.section-temario{
       position:relative;
       z-index: $z-index-2;
       background-color:transparent;
+      min-height:100px;
       span{
         position:absolute;
         z-index: $z-index-3;
@@ -787,7 +791,7 @@ section.section-temario{
 }
 
 section.section-incluye{
-  height:1506px;
+  height:1280px;
   color:$text-color;
   padding-top:6px;
   margin-bottom:0;
@@ -903,6 +907,7 @@ section.section-incluye .container .content:last-child{
 
 section.section-comienza{
   margin-top:0;
+  height:900px;
 }
 section.section-comienza .container{
   flex:.85;
@@ -929,7 +934,7 @@ section.section-comienza .container{
       }
       input{
         border-radius:6px;
-        height:60%;
+        height:50px;
         width:100%;
         padding:14px;
         font-family:inherit;

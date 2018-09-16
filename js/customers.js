@@ -10,9 +10,10 @@ var customers = [
 ];
 
 var message = [
-  ", bienvenido al <span>Mr. Crypto Academy.</span>",
+  ", bienvenido a <span>Mr. Crypto Academy.</span>",
   " se ha unido a <span>Mr. Crypto Academy.</span>",
-  " ha comenzado el curso <span>Mr. Crypto Academy.</span>"
+  " ha comenzado el curso <span>Mr. Crypto Academy.</span>",
+
 ];
 
 function callCustomer(){
