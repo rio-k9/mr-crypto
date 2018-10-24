@@ -87,7 +87,7 @@ html, body {
     background: #121212;
     border-radius: 8px 0 0 8px; }
     .user-bar .user-bar__content:first-child img {
-      width: 50%;
+      width: 66%;
       height: auto;
       display: block; }
   .user-bar .user-bar__content:last-child {
@@ -222,7 +222,8 @@ span.highlight {
   border-radius: 100px;
   color: #ffffff;
   padding: 16px;
-  font-size: 22px; }
+  font-size: 22px;
+  text-align: center; }
 
 .btn-messenger {
   color: #0084ff;
@@ -425,6 +426,7 @@ section.section-header .container .content {
       section.section-header .container .content:last-child .content-item .paragraph {
         width: 100%; }
         section.section-header .container .content:last-child .content-item .paragraph:first-child {
+          min-height: 40px;
           flex-basis: 40%; }
           section.section-header .container .content:last-child .content-item .paragraph:first-child svg {
             height: 45px;
@@ -687,10 +689,10 @@ section.section-incluye .container .content:last-child .slide {
     background-size: 50%; }
   section.section-incluye .container .content:last-child .slide:last-child .panel:first-child .panel-top {
     background: url("../images/assets/bitcoin.png") center center no-repeat;
-    background-size: 50%; }
+    background-size: 58%; }
   section.section-incluye .container .content:last-child .slide:last-child .panel:last-child .panel-top {
     background: url("../images/assets/exclusivo.png") center center no-repeat;
-    background-size: 62%; }
+    background-size: 68%; }
 
 section.section-comienza {
   margin-top: 0;

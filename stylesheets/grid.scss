@@ -97,7 +97,7 @@ html, body{
       background:#121212;
       border-radius:8px 0 0 8px;
       img{
-        width:50%;
+        width:66%;
         height:auto;
         display:block;
       }
@@ -263,6 +263,7 @@ span.highlight{
   color: $white-color;
   padding: 16px;
   font-size:22px;
+  text-align:center;
 }
 
 .btn-messenger{
@@ -519,6 +520,7 @@ section.section-header .container .content{
       .paragraph{
         width:100%;
         &:first-child{
+          min-height:40px;
           flex-basis:40%;
           svg{
             height:45px;
@@ -635,7 +637,6 @@ section.section-temario .container .content:nth-child(2){
     .panel{
       flex-basis:33.33333%;
       text-align:center;
-
       .panel-top{
         flex-basis:40%;
         width:auto;
@@ -821,7 +822,6 @@ section.section-incluye .container .content:first-child div{
       font-size:$header-size;
       font-weight:600;
     }
-
     &:last-child{
       font-size:20px;
     }
@@ -891,13 +891,13 @@ section.section-incluye .container .content:last-child{
         &:first-child{
           .panel-top{
             background: url("../images/assets/bitcoin.png") center center no-repeat;
-              background-size:50%;;
+              background-size:58%;
           }
         }
         &:last-child{
           .panel-top{
             background: url("../images/assets/exclusivo.png") center center no-repeat;
-            background-size:62%;
+            background-size:68%;
           }
         }
       }
