@@ -1,18 +1,18 @@
 var customers = [
-  "Rio Karim",
-  "Marc Castro",
-  "Marta Ayo",
-  "Félix Borquez",
-  "Manu Bustillo",
-  "Lucas Abella",
-  "Nahia Merced",
-  "Luciano Larez"
+  "<b>Rio Karim</b>",
+  "<b>Marc Castro</b>",
+  "<b>Marta Ayo</b>",
+  "<b>Félix Borquez</b>",
+  "<b>Manu Bustillo</b>",
+  "<b>Lucas Abella</b>",
+  "<b>Nahia Merced</b>",
+  "<b>Luciano Larez</b>"
 ];
 
 var message = [
-  ", bienvenido a <span>Mr. Crypto Academy.</span>",
-  " se ha unido a <span>Mr. Crypto Academy.</span>",
-  " ha comenzado el curso <span>Mr. Crypto Academy.</span>",
+  ", bienvenido a <b>Mr. Crypto Academy.</b>",
+  " se ha unido a <b>Mr. Crypto Academy.</b>",
+  " ha comenzado el curso <b>Mr. Crypto Academy.</b>",
 
 ];
 

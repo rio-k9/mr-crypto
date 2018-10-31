@@ -2,7 +2,5 @@
   "hotmart-login": "https://www.hotmart.com",
   "hotmart-purchase": "https://payment.hotmart.com/M7575857S?checkoutMode=10",
   "hotmart-price-discount": "https://payment.hotmart.com/M7575857S?checkoutMode=10",
-  "hotmart-price-full": "https://payment.hotmart.com/M7575857S?checkoutMode=10",
-  "intro-video-mp4": "filename.mp4",
-  "intro-video-ogg": "filename.ogg"
+  "hotmart-price-full": "https://payment.hotmart.com/M7575857S?checkoutMode=10"
 }
