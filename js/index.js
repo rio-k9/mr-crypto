@@ -58,9 +58,9 @@ $(document).ready(function(){
       })
       .then(function(localeData) {
           $.each(localeData, function(key, value){
-			  $("[locale-data]").each(function(){
+			  $("[data-locale]").each(function(){
 				  var div = $(this);
-				  if (div.attr('locale-data') == key){
+				  if (div.attr('data-locale') == key){
 				    if (value.includes('http') || value.includes('https')){
 				      div.attr('href', value);
                       console.log(div)
