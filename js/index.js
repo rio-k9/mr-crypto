@@ -32,7 +32,7 @@ $(document).ready(function(){
     }
     $('.btn-cookies').click(function()
     {
-      ij.cookie.get('gdprAccept', true, 30);
+      ij.cookie.set('gdprAccept', true, 30);
       cookiesBar.fadeOut();
     });
   }

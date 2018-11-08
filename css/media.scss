@@ -291,7 +291,7 @@
   }
 
   section.section-incluye .container{
-    margin-bottom: $stdMargin * 4;
+    margin-bottom: $stdMargin * 3;
   }
   section.section-incluye .container .content:first-child div{
     flex:1;
@@ -341,13 +341,19 @@
   }
 
   section.section-buynow{
-
+    .container:first-child{
+      margin-top:$stdMargin;
+    }
   }
 
   footer.section-footer{
     text-align:center;
     .container{
       &:first-child{
+
+
+        margin: 0 auto;
+        margin-bottom:$stdMargin;
         font-size:$header-size;
       }
       .footer__list{

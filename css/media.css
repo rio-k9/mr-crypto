@@ -200,7 +200,7 @@ html, body {
       margin-bottom: 0; }
 
   section.section-incluye .container {
-    margin-bottom: 48px; }
+    margin-bottom: 36px; }
 
   section.section-incluye .container .content:first-child div {
     flex: 1; }
@@ -226,9 +226,14 @@ html, body {
     section.section-curso .container span {
       font-size: 32px; }
 
+  section.section-buynow .container:first-child {
+    margin-top: 12px; }
+
   footer.section-footer {
     text-align: center; }
     footer.section-footer .container:first-child {
+      margin: 0 auto;
+      margin-bottom: 12px;
       font-size: 32px; }
     footer.section-footer .container .footer__list .footer__list-item--header {
       font-size: 24px; }
