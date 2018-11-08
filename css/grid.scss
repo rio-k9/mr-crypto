@@ -794,7 +794,6 @@ section.section-incluye{
 
       &.content:last-child{
         flex:.875;
-        margin-bottom: $stdMargin;
       }
     }
   }
@@ -1095,7 +1094,8 @@ section.section-purchase{
   .container{
     height:100%;
     .btn{
-      margin:$stdMargin;
+      margin:$stdMargin * 2 auto;
+      margin-bottom: $stdMargin * 3;
     }
     .content{
       &:first-child{
@@ -1166,7 +1166,7 @@ section.section-buynow{
     &:first-child{
       height: $stdHeader;
       margin:$stdMargin*3 auto;
-      margin-bottom:$stdMargin;
+      margin-bottom:0;
       span, a{
 
         margin:$stdMargin;
@@ -1180,6 +1180,9 @@ section.section-buynow{
       }
     }
     &:nth-child(2){
+      .content{
+        margin:$stdMargin auto;
+      }
       span, a{
         &:last-child{
           font-size: $font-size;
@@ -1187,16 +1190,13 @@ section.section-buynow{
         }
       }
     }
-    &:nth-child(3){
-      .content{
-        margin:$stdMargin;
-      }
-    }
     &:last-child{
-      margin-bottom: $stdMargin * 4;
       img{
         height:180px;
         width:auto;
+
+        margin-bottom: $stdMargin * 3;
+        margin-top:$stdMargin;
       }
     }
   }

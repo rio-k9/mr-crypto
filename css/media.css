@@ -199,6 +199,9 @@ html, body {
       margin-top: 0;
       margin-bottom: 0; }
 
+  section.section-incluye .container {
+    margin-bottom: 48px; }
+
   section.section-incluye .container .content:first-child div {
     flex: 1; }
     section.section-incluye .container .content:first-child div span:first-child.header {
@@ -226,7 +229,7 @@ html, body {
   footer.section-footer {
     text-align: center; }
     footer.section-footer .container:first-child {
-      font-size: 24px; }
+      font-size: 32px; }
     footer.section-footer .container .footer__list .footer__list-item--header {
       font-size: 24px; }
     footer.section-footer .container:last-child .footer__list-item:first-child.footer__list-item--header {

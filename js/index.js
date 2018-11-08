@@ -45,12 +45,14 @@ $(document).ready(function(){
 
   function handleBtnProduct()
   {
-    $('.btn-product:first-child').click( function()
-    {
-      let body = $('html, body');
-      body.animate({
-        scrollTop: $(".section-buynow").offset().top},1000);
-    });
+    $('.btn-product-link').each(function(){
+    $(this).click( function()
+      {
+        let body = $('html, body');
+        body.animate({
+          scrollTop: $(".section-buynow").offset().top},1000);
+      });
+    })
   }
 
   function handleNav()
@@ -88,17 +90,19 @@ $(document).ready(function(){
 
   function handleBtnForm()
   {
-    $('.btn-form').click(function()
-    {
-      let body = $('html, body');
-      let scrollTime = 1500;
-      let navbarOffset = 85;
-      body.animate({
-        scrollTop: $("form").offset().top - navbarOffset
-      }, scrollTime);
-      ij.cookie.set('userEmail', $('input[name="email"]').val(), 30);
-      ij.cookie.set('userName', $('input[name="name"]').val(), 30);
-    });
+    if($("form").length){
+      $('.btn-form').click(function()
+      {
+        let body = $('html, body');
+        let scrollTime = 1500;
+        let navbarOffset = 85;
+        body.animate({
+          scrollTop: $("form").offset().top - navbarOffset
+        }, scrollTime);
+        ij.cookie.set('userEmail', $('input[name="email"]').val(), 30);
+        ij.cookie.set('userName', $('input[name="name"]').val(), 30);
+      });
+    }
   }
 
   function handleNavMobile()

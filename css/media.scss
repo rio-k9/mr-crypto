@@ -290,6 +290,9 @@
     }
   }
 
+  section.section-incluye .container{
+    margin-bottom: $stdMargin * 4;
+  }
   section.section-incluye .container .content:first-child div{
     flex:1;
     span{
@@ -337,11 +340,15 @@
     }
   }
 
+  section.section-buynow{
+
+  }
+
   footer.section-footer{
     text-align:center;
     .container{
       &:first-child{
-        font-size:$subhead-size;
+        font-size:$header-size;
       }
       .footer__list{
         .footer__list-item--header{
